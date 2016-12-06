@@ -1,4 +1,4 @@
-# Gmail_Notifier-
+# Gmail_Notifier
  This project creates a Gmail Notifier with Raspberry Pi.
   When the python code is executed in Raspberry Pi, it prompts the user to input the Gmail ID and the password and access the Gmail account using it. If the login is unsuccessful, the execution is exited with an error message. Now, the code checks the mail with a time lag of 0.01 seconds.  
   
