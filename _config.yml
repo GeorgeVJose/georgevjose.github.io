@@ -1,0 +1,8 @@
+title: GeorgeVJose.GitHub.io
+description: GitHub page where i publish my projects.
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
