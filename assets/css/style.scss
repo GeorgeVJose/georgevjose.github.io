@@ -1,0 +1,42 @@
+---
+---
+
+// Import base styles from the Cayman theme and then layer our tweaks on top.
+@import "jekyll-theme-cayman";
+
+/* ---------- Custom site tweaks ---------- */
+
+// Center-aligned navigation bar
+nav {
+  margin: 1rem 0 2rem;
+  text-align: center;
+  a {
+    margin: 0 0.75rem;
+    font-weight: 600;
+    color: #0366d6;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Consistent section spacing
+section {
+  margin-bottom: 2.5rem;
+}
+
+// Bullet lists spacing tweaks
+ul {
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+  li {
+    margin-bottom: 0.25rem;
+  }
+}
+
+// Improve line-length readability
+.markdown-body {
+  max-width: 900px; // a bit wider than Cayman default
+}
+

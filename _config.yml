@@ -1,8 +1,7 @@
-title: GeorgeVJose.GitHub.io
-description: GitHub page where i publish my projects.
-google_analytics: 
-show_downloads: true
+title: "George V Jose"
+description: "Machine-Learning Engineer & Researcher — Projects, publications, and musings."
 theme: jekyll-theme-cayman
+show_downloads: false
 
 gems:
   - jekyll-mentions
