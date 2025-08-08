@@ -1,7 +1,4 @@
-title: "George V Jose"
+title: "George Jose"
 description: "Machine-Learning Engineer & Researcher — Projects, publications, and musings."
-theme: jekyll-theme-cayman
-show_downloads: false
-
 gems:
   - jekyll-mentions
