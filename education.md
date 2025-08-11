@@ -25,4 +25,4 @@ title: Education
 
 ---
 
-[← Back to Home](/) | [View Experience →](/experience) | [View Skills →](/skills)
+[← Back to Home](/) | [Experience →](/experience) | [Skills →](/skills)

@@ -9,12 +9,28 @@ title: Projects
 
 ---
 
-## 🔬 Research Projects
+## Research Projects
 
-### DRISHT-E: Traffic Analytics Platform
-*Ongoing Project at IIT Bombay (2021 – Present)*
+### Medical AI Safety: Demography Bias and Fairness of Medical Imaging in Vision-Language models
+*Ongoing Research as part of Masters program*
 
-A comprehensive video-based traffic analytics platform designed for non-lane-based traffic scenarios.
+> Auditing [CheXagent’s](https://stanford-aimi.github.io/chexagent.html) chest X-ray predictions for demographic bias by linking performance disparities across gender, race, and age to internal model confidence signals
+
+**Methodology & Findings:**
+- Probed CheXagent using forward hooks to capture internal signals from vision and decoder modules
+- Compared subgroup performance disparities with patterns in these internal confidence measures.
+- Clear subgroup disparities in TPR and FPR for certain pathologies, with both under and over-detection patterns.
+- Ethical Implications in Medical Imaging
+
+**Technologies:** PyTorch, Medical Imaging, Demography Bias, Fairness, Vision-Language Models
+---
+
+### DRISHT-E: Traffic Analytics Platform 
+*Ongoing Project at IIT Bombay (2021 – Present)* | [GitHub](https://github.com/georgevjose/DRISHTE-Public)
+
+> A comprehensive video-based traffic analytics platform designed for non-lane-based traffic scenarios.
+
+![Traffic Analytics](images/Mannanthala_0007_short_compressed.gif)
 
 **Key Features:**
 - Drone dataset curation (~186k frames, 4M annotations)
@@ -27,65 +43,24 @@ A comprehensive video-based traffic analytics platform designed for non-lane-bas
 ---
 
 ### Dental Landmark Detection System
-*Research at Australian Institute for Machine Learning (2020)*
+*Research Internship at Australian Institute for Machine Learning (2024)*
 
-PointNet++ pipeline for precise dental landmark localization on 3D point clouds.
+> PointNet++ pipeline for precise dental landmark localization on 3D point clouds. 420 3D maxillary dental casts were used for training and testing.
+
+![Dental Landmark Detection](images/T125B(P)Maxillary_result_silver.png)
 
 **Achievements:**
-- <1mm accuracy on 91% of test landmarks
-- Advanced 3D point cloud processing
-- Applications in precision dentistry and medical AI
+- <1mm accuracy on 91% of test dataset with 504 landmarks
+- High accuracy with an average landmark detection error of *0.6 mm*
+- 2 stage pipeline for coarse detection and fine localization
+- Applications in precision dentistry and Orthodontics
 
 **Technologies:** Python, PointNet++, 3D Processing, Medical AI
 
 ---
 
-## 💻 Personal Projects
-
-### Gmail Notifier System
-*Hardware & Software Integration Project*
-
-An intelligent notification system that provides physical alerts for Gmail messages.
-
-**Features:**
-- Real-time Gmail API integration
-- Hardware-based notification system
-- Custom Python backend
-- Visual and audio notification capabilities
-
-**Technologies:** Python, Gmail API, Hardware Integration, IoT
-
-**Project Files:**
-- [View Schematic](Gmail_Notifier/Schematic.jpg)
-- [See Output Demo](Gmail_Notifier/Output_1.jpg)
-- [Source Code](Gmail_Notifier/main.py)
-
----
-
-## 🌐 Web Development
-
-### Personal Portfolio Website
-*This Site - Built with Jekyll & Minimal Theme*
-
-A responsive, modern portfolio website showcasing professional experience and projects.
-
-**Features:**
-- Jekyll-based static site generation
-- Minimal theme with custom styling
-- Mobile-responsive design
-- SEO optimization
-- GitHub Pages deployment
-
-**Technologies:** Jekyll, Markdown, SCSS, GitHub Pages
-
----
 
 ## 🔮 Future Projects
-
-### Medical AI Safety Research
-*Planned Research Initiative*
-
-Investigating safety considerations and ethical implications in healthcare AI applications.
 
 ### Advanced Traffic Analytics
 *Extension of DRISHT-E*

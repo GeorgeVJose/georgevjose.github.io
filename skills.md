@@ -9,7 +9,7 @@ title: Skills
 
 ---
 
-## 🐍 Programming & Machine Learning
+## Programming & Machine Learning
 
 - **Python:** NumPy, Pandas, TensorFlow, PyTorch, scikit-learn
 - **Accelerated ML:** ONNX, JAX, CUDA
@@ -19,7 +19,7 @@ title: Skills
 
 ---
 
-## 🎯 Specializations
+## Specializations
 
 - **Computer Vision:** Object detection, image processing, point cloud analysis
 - **Deep Learning:** Neural network architectures, model optimization

@@ -3,12 +3,12 @@ layout: default
 title: Home
 ---
 
-# George V Jose
+# Profile
 
 **Machine Learning Engineer · Adelaide**  
-📧 [georgevjose@gmail.com](mailto:georgevjose@gmail.com)
+ [jorujose@gmail.com](mailto:jorujose@gmail.com)
 
-Machine-learning engineer and researcher with 3+ years of experience developing datasets, training, testing, and deploying deep-learning models. Currently exploring medical-AI safety topics and passionate about bringing cutting-edge research to real-world impact.
+Machine-learning engineer and researcher with 3+ years of experience developing datasets, training, testing, and deploying deep-learning models. Currently exploring medical AI safety topics and passionate about bringing cutting-edge research to real-world impact.
 
 ---
 
@@ -25,9 +25,9 @@ Machine-learning engineer and researcher with 3+ years of experience developing 
 
 ## 🌐 Connect
 
-- [LinkedIn](https://linkedin.com/in/your-profile) <!-- Update with your actual LinkedIn -->
+- [LinkedIn](https://www.linkedin.com/in/george-v-jose-5bb726156/) <!-- Update with your actual LinkedIn -->
 - [GitHub](https://github.com/georgevjose)
-- [Twitter](https://twitter.com/your-handle) <!-- Update with your actual Twitter if you have one -->
+- [Medium](https://medium.com/@GeorgeVJose)
 
 ---
 
@@ -35,6 +35,4 @@ Machine-learning engineer and researcher with 3+ years of experience developing 
 
 [📥 Download Resume (PDF)](George%20Jose%20Resume%20July.pdf)
 
----
 
-*This site is built with Jekyll using the Minimal theme and hosted on GitHub Pages.*

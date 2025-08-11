@@ -25,9 +25,9 @@ title: Resume
 
 ## 📞 Contact Information
 
-**Email:** [georgevjose@gmail.com](mailto:georgevjose@gmail.com)  
+**Email:** [jorujose@gmail.com](mailto:jorujose@gmail.com)  
 **Location:** Adelaide, Australia  
-**LinkedIn:** [Connect with me](https://linkedin.com/in/your-profile) <!-- Update with actual profile -->  
+**LinkedIn:** [Connect with me](https://www.linkedin.com/in/george-v-jose-5bb726156/)
 **GitHub:** [georgevjose](https://github.com/georgevjose)
 
 ---
@@ -39,8 +39,8 @@ Machine-learning engineer and researcher with 3+ years of experience developing 
 ### Core Competencies
 - Deep Learning & Neural Networks
 - Computer Vision & Image Processing  
-- Medical AI & Healthcare Applications
 - Traffic Analytics & Video Processing
+- Medical AI & Healthcare Applications
 - Research & Development
 - Team Collaboration & Leadership
 
