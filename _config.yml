@@ -1,4 +1,30 @@
-title: "George Jose"
+title: "George V Jose"
 description: "Machine-Learning Engineer & Researcher — Projects, publications, and musings."
-gems:
+
+# Theme configuration
+remote_theme: pages-themes/minimal@v0.2.0
+
+# Plugins
+plugins:
+  - jekyll-remote-theme
   - jekyll-mentions
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Site settings
+author: George V Jose
+email: georgevjose@gmail.com
+location: Adelaide
+linkedin_username: # Add your LinkedIn username
+github_username: georgevjose # Add your GitHub username
+twitter_username: # Add your Twitter username if you have one
+
+# Logo/Profile picture
+logo: /assets/img/profile.jpg
+
+# Google Analytics (optional)
+# google_analytics: # Add your GA tracking ID if you have one
+
+# Navigation (optional - for minimal theme)
+show_downloads: false
