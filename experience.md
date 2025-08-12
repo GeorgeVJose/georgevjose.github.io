@@ -1,11 +1,13 @@
 ---
-layout: default
-title: Experience
+layout: single
+title: "Professional Experience"
+permalink: /experience/
+author_profile: true
 ---
 
 # Experience
 
-[← Back to Home](/)
+
 
 ---
 
@@ -31,4 +33,4 @@ Developed a **PointNet++** pipeline to precisely localise dental landmarks on 3-
 
 ---
 
-[← Back to Home](/) | [View Skills →](/skills)
+

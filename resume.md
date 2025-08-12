@@ -1,11 +1,13 @@
 ---
-layout: default
-title: Resume
+layout: single
+title: "Resume"
+permalink: /resume/
+author_profile: true
 ---
 
 # Resume
 
-[← Back to Home](/)
+
 
 ---
 
@@ -46,4 +48,4 @@ Machine-learning engineer and researcher with 3+ years of experience developing 
 
 ---
 
-[← Back to Home](/) | [View Experience →](/experience) | [View Publications →](/publications)
+

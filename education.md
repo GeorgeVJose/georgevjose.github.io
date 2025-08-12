@@ -1,6 +1,8 @@
 ---
-layout: default
-title: Education
+layout: single
+title: "Education"
+permalink: /education/
+author_profile: true
 ---
 
 # Education
@@ -25,4 +27,4 @@ title: Education
 
 ---
 
-[← Back to Home](/) | [Experience →](/experience) | [Skills →](/skills)
+

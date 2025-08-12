@@ -1,11 +1,13 @@
 ---
-layout: default
-title: Projects
+layout: single
+title: "Research Projects"
+permalink: /projects/
+author_profile: true
 ---
 
 # Projects
 
-[← Back to Home](/)
+
 
 ---
 
@@ -23,6 +25,7 @@ title: Projects
 - Ethical Implications in Medical Imaging
 
 **Technologies:** PyTorch, Medical Imaging, Demography Bias, Fairness, Vision-Language Models
+
 ---
 
 ### DRISHT-E: Traffic Analytics Platform 
@@ -69,4 +72,4 @@ Expanding traffic analytics capabilities to include predictive modeling and real
 
 ---
 
-[← Back to Home](/) | [View Publications →](/publications) | [View Skills →](/skills)
+
