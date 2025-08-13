@@ -23,6 +23,7 @@ title: Projects
 - Ethical Implications in Medical Imaging
 
 **Technologies:** PyTorch, Medical Imaging, Demography Bias, Fairness, Vision-Language Models
+
 ---
 
 ### DRISHT-E: Traffic Analytics Platform 

@@ -10,7 +10,7 @@ title: Experience
 ---
 
 ## Project Research Assistant
-**Indian Institute of Technology Bombay** | *2021 – Present*
+**Indian Institute of Technology Bombay** | *2020 – 2023*
 
 Designed and engineered **DRISHT-E**, a video-based traffic analytics platform for non-lane-based traffic.
 
@@ -21,7 +21,7 @@ Designed and engineered **DRISHT-E**, a video-based traffic analytics platform f
 ---
 
 ## Research Intern
-**Australian Institute for Machine Learning** | *2020*
+**Australian Institute for Machine Learning** | *2024*
 
 Developed a **PointNet++** pipeline to precisely localise dental landmarks on 3-D dentition point clouds.
 
