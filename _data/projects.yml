@@ -1,0 +1,81 @@
+categories:
+  - id: research
+    title: "Research Projects"
+    projects:
+      - title: "Medical AI Safety: Demography Bias and Fairness of Medical Imaging in Vision-Language Models"
+        subtitle: "Ongoing research as part of Masters program"
+        summary: >-
+          Auditing [CheXagent](https://stanford-aimi.github.io/chexagent.html)'s chest X-ray predictions for demographic bias by
+          linking subgroup performance disparities across gender, race, and age to internal model confidence signals.
+        metrics:
+          - label: Bias dimensions assessed
+            value: "Gender, race, age"
+          - label: Model signals probed
+            value: "Vision & decoder confidences"
+        technologies:
+          - PyTorch
+          - Medical Imaging
+          - Demography Bias
+          - Fairness
+          - Vision-Language Models
+      - title: "DRISHT-E: Traffic Analytics Platform"
+        subtitle: "Ongoing project at IIT Bombay (2021 – Present)"
+        summary: >-
+          Comprehensive video-based traffic analytics platform tailored for non-lane-based traffic, combining custom datasets,
+          state-of-the-art detection, and real-time analytics.
+        metrics:
+          - label: Drone frames curated
+            value: "186k"
+          - label: Annotations captured
+            value: "4M"
+          - label: Deployment focus
+            value: "Real-time traffic flow"
+        technologies:
+          - Python
+          - TensorFlow
+          - PyTorch
+          - Computer Vision
+          - Drone Data Processing
+        media:
+          type: image
+          src: images/Mannanthala_0007_short_compressed.gif
+          alt: "DRISHT-E drone traffic analytics preview"
+        links:
+          - label: "View on GitHub"
+            url: "https://github.com/georgevjose/DRISHTE-Public"
+            style: primary
+      - title: "Dental Landmark Detection System"
+        subtitle: "Research internship at Australian Institute for Machine Learning (2024)"
+        summary: >-
+          Two-stage PointNet++ pipeline for precise dental landmark localisation on 3D point clouds spanning 420 maxillary casts.
+        metrics:
+          - label: Average error
+            value: "0.6 mm"
+          - label: Landmarks in dataset
+            value: "504"
+          - label: Accuracy within 1 mm
+            value: "91%"
+        technologies:
+          - Python
+          - PointNet++
+          - 3D Processing
+          - Medical AI
+        media:
+          type: image
+          src: images/T125B(P)Maxillary_result_silver.png
+          alt: "Dental landmark detection heatmap"
+  - id: future
+    title: "🔮 Future Projects"
+    projects:
+      - title: "Advanced Traffic Analytics"
+        subtitle: "Extension of DRISHT-E"
+        summary: >-
+          Expanding the platform with predictive modelling and optimisation for proactive traffic management across dynamic urban
+          corridors.
+        metrics:
+          - label: Focus areas
+            value: "Prediction & optimisation"
+        technologies:
+          - Traffic Simulation
+          - Predictive Modelling
+          - Operations Research
