@@ -10,35 +10,35 @@ header:
       url: "/George%20Jose%20Resume%20July.pdf"
       class: "btn--primary"
 excerpt: "Machine Learning Engineer & Researcher passionate about medical AI safety and turning cutting-edge research into production solutions."
-intro: 
-  - excerpt: 'Machine-learning engineer and researcher with 3+ years of experience developing datasets, training, testing, and deploying deep-learning models. Currently exploring medical AI safety topics and passionate about bringing cutting-edge research to real-world impact.'
-feature_row:
-  - image_path: assets/images/experience-icon.png
-    alt: "Experience"
-    title: "Experience"
-    excerpt: "3+ years in ML research and development across academic and industry settings."
-    url: "/experience/"
-    btn_label: "View Experience"
-    btn_class: "btn--primary"
-  - image_path: assets/images/projects-icon.png
-    alt: "Projects"
-    title: "Projects"
-    excerpt: "Cutting-edge research in medical AI, traffic analytics, and computer vision."
-    url: "/projects/"
-    btn_label: "View Projects"
-    btn_class: "btn--primary"
-  - image_path: assets/images/publications-icon.png
-    alt: "Publications"
-    title: "Publications"
-    excerpt: "Research contributions in AI safety, medical imaging, and machine learning."
-    url: "/publications/"
-    btn_label: "View Publications"
-    btn_class: "btn--primary"
+hero:
+  eyebrow: "Machine Learning Engineer & Researcher"
+  headline: "Safer medical AI through research and deployment"
+  subheadline: "Machine-learning engineer and researcher with 3+ years of experience developing datasets, training, testing, and deploying deep-learning models. Currently exploring medical AI safety topics and passionate about bringing cutting-edge research to real-world impact."
+  image: /assets/images/hero-illustration.svg
+  ctas:
+    - label: "Explore Projects"
+      url: "/projects/"
+      style: "btn--primary"
+    - label: "Read Publications"
+      url: "/publications/"
+      style: "btn--inverse"
+  metrics:
+    - value: "3+"
+      label: "Years advancing ML solutions"
+    - value: "4M+"
+      label: "Annotations powering DRISHT-E"
+    - value: "5"
+      label: "Peer-reviewed publications"
 ---
 
-{% include feature_row id="intro" type="center" %}
-
-{% include feature_row %}
+{% include hero.html
+   eyebrow=page.hero.eyebrow
+   headline=page.hero.headline
+   subheadline=page.hero.subheadline
+   image=page.hero.image
+   ctas=page.hero.ctas
+   metrics=page.hero.metrics
+%}
 
 ## Recent Highlights
 

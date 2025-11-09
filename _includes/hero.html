@@ -1,0 +1,44 @@
+<div class="hero-banner">
+  <div class="wrapper hero__layout">
+    <div class="hero__content">
+      {% if include.eyebrow %}
+      <p class="hero__eyebrow">{{ include.eyebrow }}</p>
+      {% endif %}
+      {% if include.headline %}
+      <h1 class="hero__headline">{{ include.headline }}</h1>
+      {% endif %}
+      {% if include.subheadline %}
+      <p class="hero__subheadline">{{ include.subheadline }}</p>
+      {% endif %}
+      {% assign ctas = include.ctas | default: empty %}
+      {% if ctas and ctas.size > 0 %}
+      <div class="hero__ctas">
+        {% for cta in ctas %}
+        <a class="btn {{ cta.style | default: 'btn--primary' }}" href="{{ cta.url }}">{{ cta.label }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+      {% assign metrics = include.metrics | default: empty %}
+      {% if metrics and metrics.size > 0 %}
+      <dl class="hero__metrics">
+        {% for metric in metrics %}
+        <div class="hero__metric">
+          <dt class="hero__metric-value">{{ metric.value }}</dt>
+          <dd class="hero__metric-label">{{ metric.label }}</dd>
+        </div>
+        {% endfor %}
+      </dl>
+      {% endif %}
+    </div>
+    {% if include.image %}
+    <div class="hero__media">
+      <img src="{{ include.image }}" alt="{{ include.image_alt | default: include.headline }}" loading="lazy" decoding="async" />
+    </div>
+    {% endif %}
+  </div>
+  <div class="hero__particles" aria-hidden="true">
+    <span class="hero__particle hero__particle--one"></span>
+    <span class="hero__particle hero__particle--two"></span>
+    <span class="hero__particle hero__particle--three"></span>
+  </div>
+</div>
