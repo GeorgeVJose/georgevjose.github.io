@@ -1,119 +1,71 @@
 ---
-layout: default
-title: Home
+layout: splash
+title: "George V Jose"
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/header-bg.jpg
+  actions:
+    - label: "Download Resume"
+      url: "/George%20Jose%20Resume%20July.pdf"
+      class: "btn--primary"
+excerpt: "Machine Learning Engineer & Researcher passionate about medical AI safety and turning cutting-edge research into production solutions."
+intro: 
+  - excerpt: 'Machine-learning engineer and researcher with 3+ years of experience developing datasets, training, testing, and deploying deep-learning models. Currently exploring medical AI safety topics and passionate about bringing cutting-edge research to real-world impact.'
+feature_row:
+  - image_path: assets/images/experience-icon.png
+    alt: "Experience"
+    title: "Experience"
+    excerpt: "3+ years in ML research and development across academic and industry settings."
+    url: "/experience/"
+    btn_label: "View Experience"
+    btn_class: "btn--primary"
+  - image_path: assets/images/projects-icon.png
+    alt: "Projects"
+    title: "Projects"
+    excerpt: "Cutting-edge research in medical AI, traffic analytics, and computer vision."
+    url: "/projects/"
+    btn_label: "View Projects"
+    btn_class: "btn--primary"
+  - image_path: assets/images/publications-icon.png
+    alt: "Publications"
+    title: "Publications"
+    excerpt: "Research contributions in AI safety, medical imaging, and machine learning."
+    url: "/publications/"
+    btn_label: "View Publications"
+    btn_class: "btn--primary"
 ---
 
-# Profile
+{% include feature_row id="intro" type="center" %}
 
-**Machine Learning Engineer · Adelaide**  
- [jorujose@gmail.com](mailto:jorujose@gmail.com)
+{% include feature_row %}
 
-Machine-learning engineer and researcher with 3+ years of experience developing datasets, training, testing, and deploying deep-learning models. Currently exploring medical AI safety topics and passionate about bringing cutting-edge research to real-world impact.
+## Recent Highlights
 
----
+### 🔬 Current Research
+**Medical AI Safety** - Investigating demographic bias in pathology prediction with the LLaVa-Med vision-language model at CheXagent.
 
-# Experience
+### 🚀 Latest Project
+**DRISHT-E** - Video-based traffic analytics platform with ~186k frames and 4M annotations, delivering state-of-the-art object detection accuracy.
 
----
-
-## Project Research Assistant
-**Indian Institute of Technology Bombay** | *2020 – 2023*
-
-Designed and engineered **DRISHT-E**, a video-based traffic analytics platform for non-lane-based traffic.
-
-- Curated a drone dataset of ~186k frames with 4M bounding-box annotations
-- Trained multiple object-detection networks delivering state-of-the-art accuracy
-- Developed algorithms for traffic analysis in complex, non-lane-based environments
-
----
-
-## Research Intern
-**Australian Institute for Machine Learning** | *2024*
-
-Developed a **PointNet++** pipeline to precisely localise dental landmarks on 3-D dentition point clouds.
-
-- Achieved <1mm accuracy on 91% of test landmarks
-- Implemented advanced point cloud processing techniques
-- Contributed to dental AI research and precision medicine
-
----
-
-# Projects
-
----
-
-
-### Medical AI Safety: Demography Bias and Fairness of Medical Imaging in Vision-Language models
-*Ongoing Research as part of Masters program*
-
-> Auditing [CheXagent’s](https://stanford-aimi.github.io/chexagent.html) chest X-ray predictions for demographic bias by linking performance disparities across gender, race, and age to internal model confidence signals
-
-**Methodology & Findings:**
-- Probed CheXagent using forward hooks to capture internal signals from vision and decoder modules
-- Compared subgroup performance disparities with patterns in these internal confidence measures.
-- Clear subgroup disparities in TPR and FPR for certain pathologies, with both under and over-detection patterns.
-- Ethical Implications in Medical Imaging
-
-**Technologies:** PyTorch, Medical Imaging, Demography Bias, Fairness, Vision-Language Models
+### 🎯 Technical Focus
+**Skills**: Python, PyTorch, TensorFlow, Computer Vision, Medical AI, MLOps (GCP), Point Cloud Processing
 
 ---
 
-### DRISHT-E: Traffic Analytics Platform 
-*Ongoing Project at IIT Bombay (2021 – Present)* | [GitHub](https://github.com/georgevjose/DRISHTE-Public)
+## Quick Navigation
 
-> A comprehensive video-based traffic analytics platform designed for non-lane-based traffic scenarios.
+<div class="notice--info">
+  <h4>Explore More:</h4>
+  <ul>
+    <li><a href="/experience/">Professional Experience</a></li>
+    <li><a href="/education/">Education Background</a></li>
+    <li><a href="/skills/">Technical Skills</a></li>
+    <li><a href="/projects/">Research Projects</a></li>
+    <li><a href="/publications/">Publications</a></li>
+  </ul>
+</div>
 
-![Traffic Analytics](images/Mannanthala_0007_short_compressed.gif)
+## Connect With Me
 
-**Key Features:**
-- Drone dataset curation (~186k frames, 4M annotations)
-- State-of-the-art object detection networks
-- Real-time traffic flow analysis
-- Advanced computer vision algorithms
-
-**Technologies:** Python, TensorFlow, PyTorch, Computer Vision, Drone Data Processing
-
----
-
-### Dental Landmark Detection System
-*Research Internship at Australian Institute for Machine Learning (2024)*
-
-> PointNet++ pipeline for precise dental landmark localization on 3D point clouds. 420 3D maxillary dental casts were used for training and testing.
-
-![Dental Landmark Detection](images/T125B(P)Maxillary_result_silver.png)
-
-**Achievements:**
-- <1mm accuracy on 91% of test dataset with 504 landmarks
-- High accuracy with an average landmark detection error of *0.6 mm*
-- 2 stage pipeline for coarse detection and fine localization
-- Applications in precision dentistry and Orthodontics
-
-**Technologies:** Python, PointNet++, 3D Processing, Medical AI
-
----
-
-
-## 🔗 Quick Links
-
-- [Experience](/experience)
-- [Education](/education) 
-- [Skills](/skills)
-- [Projects](/projects)
-- [Publications](/publications)
-- [Resume](/resume)
-
----
-
-## 🌐 Connect
-
-- [LinkedIn](https://www.linkedin.com/in/george-v-jose-5bb726156/) <!-- Update with your actual LinkedIn -->
-- [GitHub](https://github.com/georgevjose)
-- [Medium](https://medium.com/@GeorgeVJose)
-
----
-
-## 📄 Latest Resume
-
-[📥 Download Resume (PDF)](George%20Jose%20Resume%20July.pdf)
-
-
+Find me on [LinkedIn](https://www.linkedin.com/in/george-v-jose-5bb726156/), [GitHub](https://github.com/georgevjose), or [Medium](https://medium.com/@GeorgeVJose) for collaborations and discussions about AI research, machine learning, and technology.

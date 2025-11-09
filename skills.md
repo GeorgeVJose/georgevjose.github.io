@@ -1,20 +1,22 @@
 ---
-layout: default
-title: Skills
+layout: single
+title: "Technical Skills"
+permalink: /skills/
+author_profile: true
 ---
 
 # Skills
 
-[← Back to Home](/)
+
 
 ---
 
 ## Programming & Machine Learning
 
-- **Python:** NumPy, Pandas, TensorFlow, PyTorch, scikit-learn
-- **Accelerated ML:** ONNX, JAX, CUDA
+- **Python:** NumPy, Pandas, PyTorch, OpenCV, scikit-learn, TensorFlow
+- **Accelerated ML:** CUDA, ONNX, JAX
 - **MLOps:** Google Cloud Platform
-- **Data:** SQL
+- **DataBase:** SQL
 - **Scientific Computing:** MATLAB, R
 
 ---
@@ -29,4 +31,4 @@ title: Skills
 
 ---
 
-[← Back to Home](/) | [View Experience →](/experience) | [View Publications →](/publications)
+
