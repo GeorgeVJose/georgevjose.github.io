@@ -1,27 +1,27 @@
 <div class="hero-banner">
+  {% assign hero = include.hero %}
+  {% if hero %}
   <div class="wrapper hero__layout">
     <div class="hero__content">
-      {% if include.eyebrow %}
-      <p class="hero__eyebrow">{{ include.eyebrow }}</p>
+      {% if hero.eyebrow %}
+      <p class="hero__eyebrow">{{ hero.eyebrow }}</p>
       {% endif %}
-      {% if include.headline %}
-      <h1 class="hero__headline">{{ include.headline }}</h1>
+      {% if hero.headline %}
+      <h1 class="hero__headline">{{ hero.headline }}</h1>
       {% endif %}
-      {% if include.subheadline %}
-      <p class="hero__subheadline">{{ include.subheadline }}</p>
+      {% if hero.subheadline %}
+      <p class="hero__subheadline">{{ hero.subheadline }}</p>
       {% endif %}
-      {% assign ctas = include.ctas | default: empty %}
-      {% if ctas and ctas.size > 0 %}
+      {% if hero.ctas %}
       <div class="hero__ctas">
-        {% for cta in ctas %}
+        {% for cta in hero.ctas %}
         <a class="btn {{ cta.style | default: 'btn--primary' }}" href="{{ cta.url }}">{{ cta.label }}</a>
         {% endfor %}
       </div>
       {% endif %}
-      {% assign metrics = include.metrics | default: empty %}
-      {% if metrics and metrics.size > 0 %}
+      {% if hero.metrics %}
       <dl class="hero__metrics">
-        {% for metric in metrics %}
+        {% for metric in hero.metrics %}
         <div class="hero__metric">
           <dt class="hero__metric-value">{{ metric.value }}</dt>
           <dd class="hero__metric-label">{{ metric.label }}</dd>
@@ -30,12 +30,13 @@
       </dl>
       {% endif %}
     </div>
-    {% if include.image %}
+    {% if hero.image %}
     <div class="hero__media">
-      <img src="{{ include.image }}" alt="{{ include.image_alt | default: include.headline }}" loading="lazy" decoding="async" />
+      <img src="{{ hero.image }}" alt="{{ hero.image_alt | default: hero.headline }}" loading="lazy" decoding="async" />
     </div>
     {% endif %}
   </div>
+  {% endif %}
   <div class="hero__particles" aria-hidden="true">
     <span class="hero__particle hero__particle--one"></span>
     <span class="hero__particle hero__particle--two"></span>

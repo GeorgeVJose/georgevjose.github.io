@@ -31,14 +31,7 @@ hero:
       label: "Peer-reviewed publications"
 ---
 
-{% include hero.html
-   eyebrow=page.hero.eyebrow
-   headline=page.hero.headline
-   subheadline=page.hero.subheadline
-   image=page.hero.image
-   ctas=page.hero.ctas
-   metrics=page.hero.metrics
-%}
+{% include hero.html hero=page.hero %}
 
 ## Recent Highlights
 
