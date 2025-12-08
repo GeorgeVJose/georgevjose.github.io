@@ -19,7 +19,7 @@ class Router {
 
     // ... (keep initTheme, updateThemeIcon, initSpotlight, initScrollObserver, observeElements as is) ...
     initTheme() {
-        const savedTheme = localStorage.getItem('theme') || 'light';
+        const savedTheme = localStorage.getItem('theme') || 'dark';
         document.documentElement.setAttribute('data-theme', savedTheme);
         this.updateThemeIcon(savedTheme);
 
