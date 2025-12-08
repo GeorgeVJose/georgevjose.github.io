@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>George V Jose | ML Engineer & Researcher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Background Spotlight -->
+    <div class="background-spotlight"></div>
+
+    <header class="site-header">
+        <nav class="container">
+            <a href="#home" class="logo">GVJ</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+            <button class="mobile-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main id="app">
+        <!-- Content will be dynamically injected here -->
+    </main>
+
+    <!-- Floating Bottom Dock -->
+    <div class="floating-dock-container">
+        <nav class="floating-dock">
+            <!-- Social links injected by JS -->
+            <div id="dock-social-links" style="display: flex; gap: 0.5rem;"></div>
+            
+            <div class="dock-separator"></div>
+            
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <span id="year"></span> George V Jose. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

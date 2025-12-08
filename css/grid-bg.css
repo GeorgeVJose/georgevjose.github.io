@@ -1,0 +1,22 @@
+/* Background Grid Pattern - Inspired by Freitas UI */
+.background-spotlight {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: -1;
+    background-color: var(--bg-color);
+    background-image: 
+        radial-gradient(var(--border-color) 1px, transparent 1px);
+    background-size: 30px 30px;
+    transition: background-color 0.3s ease;
+    opacity: 0.5;
+}
+
+[data-theme="dark"] .background-spotlight {
+    background-image: 
+        radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+}
+
