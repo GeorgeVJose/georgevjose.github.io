@@ -5,7 +5,7 @@ window.portfolioData = {
     tagline: "Safer medical AI through research and deployment",
     description: "Machine-learning engineer and researcher with 3+ years of experience developing datasets, training, testing, and deploying deep-learning models. Currently exploring medical AI safety topics and passionate about bringing cutting-edge research to real-world impact.",
     image: "images/avatar.jpg", 
-    resumeUrl: "George%20Jose%20Resume%20July.pdf",
+    resumeUrl: "Resume.pdf",
     social: {
       linkedin: "https://www.linkedin.com/in/george-v-jose-5bb726156/",
       github: "https://github.com/georgevjose",
