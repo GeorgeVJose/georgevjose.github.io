@@ -20,9 +20,8 @@ window.portfolioData = {
       period: "2025 - Present",
       description: "Dental Point Cloud Analysis",
       highlights: [
-        // "Achieved <1mm accuracy on 91% of test landmarks",
-        // "Implemented advanced point cloud processing techniques",
-        // "Contributed to dental AI research and precision medicine"
+        "Developing deep learning architectures for 3D dental point cloud analysis",
+        "Provide interpretable, case-based reasoning for clinical predictions"
       ]
     },
     {
