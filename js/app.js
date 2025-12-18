@@ -279,7 +279,7 @@ class Router {
                 <p class="description hero-animate hero-delay-5">${description}</p>
                 <div class="cta-buttons hero-animate hero-delay-5">
                     <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="${resumeUrl}" class="btn btn-outline" target="_blank">Resume</a>
+                    <a href="${resumeUrl}" class="btn btn-outline" target="_blank" title="${name}'s Resume">Resume</a>
                 </div>
             </div>
             <div class="hero-image-container hero-animate hero-delay-2">
