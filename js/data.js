@@ -1,7 +1,7 @@
 window.portfolioData = {
   hero: {
     name: "George V Jose",
-    title: "Machine Learning Researcher",
+    title: "Machine Learning Engineer & Researcher",
     tagline: "Safer medical AI through research and deployment",
     description: "Machine-learning engineer and researcher with 3+ years of experience developing datasets, training, testing, and deploying deep-learning models. Currently exploring medical AI safety topics and passionate about bringing cutting-edge research to real-world impact.",
     image: "images/avatar.jpg", 
@@ -20,8 +20,8 @@ window.portfolioData = {
       period: "2025 - Present",
       description: "Dental Point Cloud Analysis",
       highlights: [
-        "Developing deep learning architectures for 3D dental point cloud analysis",
-        "Provide interpretable, case-based reasoning for clinical predictions"
+        "Developed a interpretable framework adapted for 3D dental point clouds",
+        "Implemented an internal toolset for dental mesh analysis, automated cast cleaning, palate extraction, and interactive segmentation tools"
       ]
     },
     {
@@ -62,6 +62,33 @@ window.portfolioData = {
     }
   ],
   projects: [
+    {
+      id: "proto-pointnet",
+      title: "ProtoPointNet: Interpretable 3D Dental Network",
+      subtitle: "AIML Research",
+      summary: "A novel interpretable architecture for 3D dental point cloud analysis that decomposes global predictions into activations of learned, class-aware prototypes for transparent clinical reasoning.",
+      description: `
+        <h3>Interpretable Reasoning</h3>
+        <p>A novel interpretable architecture for 3D dental point cloud analysis that decomposes global predictions into the activations of learned, class-aware prototypes. This framework provides transparency by mapping similarities between prototypes and relevant local geometric patches, allowing clinicians to visualize and audit the specific "evidence" regions driving each model output.</p>
+
+        <h3>Geometric Feature Extraction</h3>
+        <p>Optimized a feature extraction backbone (<strong>PointNet++</strong>) to operate on 10-dimensional input features, ensuring stable performance on high-resolution dental scans.</p>
+
+        <h3>Libraries & Techniques</h3>
+        <ul>
+          <li><strong>Libraries:</strong> PyTorch Lightning, PyTorch3D, Trimesh, Open3D, TorchMetrics</li>
+          <li><strong>Techniques:</strong> Geometric Deep Learning (FPS, Ball Query), Interpretable AI (ProtoPNet), 3D Mesh Processing</li>
+        </ul>
+      `,
+      technologies: ["PyTorch Lightning", "PyTorch3D", "PointNet++", "Interpretable AI", "3D Mesh Processing"],
+      metrics: [],
+      media: {
+        type: "image",
+        src: "images/Protopointnet heatmap.jpg",
+        alt: "ProtoPointNet heatmap visualization on dental point cloud"
+      },
+      links: []
+    },
     {
       id: "medical-ai-safety",
       title: "Medical AI Safety: Demography Bias and Fairness",
@@ -146,7 +173,8 @@ window.portfolioData = {
         alt: "Dental landmark detection heatmap"
       },
       links: [
-        { label: "View Report", url: "Dental Landmark Report.pdf" }
+        { label: "View Report", url: "Dental Landmark Report.pdf" },
+        { label: "View Publication", url: "https://onlinelibrary.wiley.com/doi/10.1155/ijod/9409391" },
       ]
     },
     {

@@ -268,7 +268,7 @@ class Router {
     renderHero() {
         const container = document.querySelector('.hero-content');
         if (!container) return;
-        const { name, title, tagline, description, resumeUrl, image } = window.portfolioData.hero;
+        const { name, title, tagline, resumeUrl, image } = window.portfolioData.hero;
 
         container.innerHTML = `
             <div class="hero-text">
@@ -276,7 +276,7 @@ class Router {
                 <h1 class="hero-animate hero-delay-2">${name}</h1>
                 <div class="subtitle hero-animate hero-delay-3">${title}</div>
                 <p class="tagline hero-animate hero-delay-4">${tagline}</p>
-                <p class="description hero-animate hero-delay-5">${description}</p>
+                <p class="connect-line hero-animate hero-delay-5">Let's connect <span class="typewriter-wrapper"><span id="typewriter-text"></span><span class="typewriter-cursor">|</span></span></p>
                 <div class="cta-buttons hero-animate hero-delay-5">
                     <a href="#projects" class="btn btn-primary">View Projects</a>
                     <a href="${resumeUrl}" class="btn btn-outline" target="_blank" title="${name}'s Resume">Resume</a>
@@ -286,6 +286,48 @@ class Router {
                 <img src="${image}" alt="${name}" class="profile-img">
             </div>
         `;
+
+        this.startTypewriter();
+    }
+
+    startTypewriter() {
+        const phrases = ["via LinkedIn", "over a coffee?", "on a walk!", "about Home Servers", "about F1"];
+        const el = document.getElementById('typewriter-text');
+        if (!el) return;
+
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typingSpeed = 80;
+        const deletingSpeed = 45;
+        const pauseAfterType = 1800;
+        const pauseAfterDelete = 400;
+
+        const tick = () => {
+            const current = phrases[phraseIndex];
+            if (isDeleting) {
+                charIndex--;
+                el.textContent = current.slice(0, charIndex);
+                if (charIndex === 0) {
+                    isDeleting = false;
+                    phraseIndex = (phraseIndex + 1) % phrases.length;
+                    setTimeout(tick, pauseAfterDelete);
+                    return;
+                }
+                setTimeout(tick, deletingSpeed);
+            } else {
+                charIndex++;
+                el.textContent = current.slice(0, charIndex);
+                if (charIndex === current.length) {
+                    isDeleting = true;
+                    setTimeout(tick, pauseAfterType);
+                    return;
+                }
+                setTimeout(tick, typingSpeed);
+            }
+        };
+
+        tick();
     }
 
     renderAbout() {

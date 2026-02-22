@@ -243,9 +243,9 @@ img { max-width: 100%; display: block; }
 }
 
 .hero-text .tagline {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: var(--text-color);
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: var(--text-light);
     margin-bottom: 0.5rem;
 }
 
@@ -253,6 +253,37 @@ img { max-width: 100%; display: block; }
     color: var(--text-light);
     margin-bottom: 2rem;
     max-width: 500px;
+}
+
+.hero-text .connect-line {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    max-width: 500px;
+}
+
+.typewriter-wrapper {
+    display: inline;
+    white-space: nowrap;
+}
+
+#typewriter-text {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.typewriter-cursor {
+    display: inline-block;
+    color: var(--primary-color);
+    font-weight: 300;
+    margin-left: 1px;
+    animation: blink-cursor 0.75s step-end infinite;
+}
+
+@keyframes blink-cursor {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }
 
 .hero-image-container {
