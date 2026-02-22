@@ -419,6 +419,7 @@ class Router {
                 <div class="pub-meta">
                     <span class="pub-journal">${pub.journal}</span>
                     <span class="pub-status status-${pub.status.toLowerCase().replace(/ /g, '-')}">${pub.status}</span>
+                    ${pub.doi ? `<a class="pub-doi" href="${pub.doi}" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> View Paper</a>` : ''}
                 </div>
             </div>
         `).join('');

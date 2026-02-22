@@ -602,6 +602,8 @@ img { max-width: 100%; display: block; }
 .pub-card h4 { font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-color); }
 .pub-meta { display: flex; gap: 1rem; align-items: center; font-size: 0.9rem; }
 .pub-journal { font-style: italic; color: var(--text-light); }
+.pub-doi { font-size: 0.85rem; color: var(--primary-color); font-weight: 500; text-decoration: none; display: inline-flex; align-items: center; gap: 0.3rem; }
+.pub-doi:hover { text-decoration: underline; }
 .pub-status { padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: 600; }
 .status-published { background: rgba(5, 150, 105, 0.1); color: #059669; }
 [data-theme="dark"] .status-published { background: rgba(5, 150, 105, 0.2); color: #34d399; }

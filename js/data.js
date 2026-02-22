@@ -235,12 +235,14 @@ aerosol properties with NASA's AOD data</li>
     {
       title: "A deep learning model to automatically identify palatal landmarks on three-dimensional dental casts",
       journal: "International Journal of Dentistry",
-      status: "Under Review"
+      status: "Published",
+      doi: "https://onlinelibrary.wiley.com/doi/10.1155/ijod/9409391"
     },
     {
       title: "Complex Hygroscopic Behavior of Ambient Aerosol Particles Revealed by a Piezoelectric Technique",
       journal: "ACS Earth and Space Chemistry",
-      status: "Published"
+      status: "Published",
+      doi: "https://pubs.acs.org/doi/full/10.1021/acsearthspacechem.3c00347"
     },
     {
       title: "Automatic Detection and Classification of Vehicle Class in non-lane-based Traffic Conditions Using Drone Data",
