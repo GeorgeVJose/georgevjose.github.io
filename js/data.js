@@ -4,7 +4,6 @@ window.portfolioData = {
     title: "Machine Learning Engineer & Researcher",
     tagline: "Safer medical AI through research and deployment",
     description: "Machine-learning engineer and researcher with 3+ years of experience developing datasets, training, testing, and deploying deep-learning models. Currently exploring medical AI safety topics and passionate about bringing cutting-edge research to real-world impact.",
-    image: "images/avatar.jpg", 
     resumeUrl: "Resume.pdf",
     social: {
       linkedin: "https://www.linkedin.com/in/george-v-jose-5bb726156/",
@@ -20,7 +19,7 @@ window.portfolioData = {
       period: "2025 - Present",
       description: "Dental Point Cloud Analysis",
       highlights: [
-        "Developed a interpretable framework adapted for 3D dental point clouds",
+        "Developed an interpretable framework adapted for 3D dental point clouds",
         "Implemented an internal toolset for dental mesh analysis, automated cast cleaning, palate extraction, and interactive segmentation tools"
       ]
     },
@@ -52,7 +51,7 @@ window.portfolioData = {
       degree: "Masters in Artificial Intelligence and Machine Learning",
       school: "University of Adelaide",
       location: "Adelaide, Australia",
-      gpa: "6.625"
+      gpa: "6.625/7"
     },
     {
       degree: "Bachelor of Engineering in Computer Science and Engineering",
@@ -111,15 +110,15 @@ window.portfolioData = {
       ],
       media: {
         type: "image",
-        src: "images/chexagent_audit.png",
-        alt: "Medical AI Safety: Demography Bias and Fairness"
+        src: "images/chexagent_audit.jpg",
+        alt: "Illustration of chest X-rays across a demographically diverse group of patients"
       },
       links: []
     },
     {
       id: "drisht-e",
       title: "DRISHT-E: Traffic Analytics Platform",
-      subtitle: "IIT Bombay (2021 - Present)",
+      subtitle: "IIT Bombay",
       summary: "Comprehensive video-based traffic analytics platform tailored for non-lane-based traffic, combining custom datasets, state-of-the-art detection, and real-time analytics.",
       description: `
         <p><strong>DRISHT-E</strong> is a comprehensive video-based traffic analytics platform tailored for non-lane-based traffic. It combines custom datasets, state-of-the-art detection, and real-time analytics to solve complex traffic management challenges in chaotic environments.</p>
@@ -138,9 +137,10 @@ window.portfolioData = {
         { label: "Deployment focus", value: "Real-time traffic flow" }
       ],
       media: {
-        type: "image",
-        src: "images/Mannanthala_0007_short_compressed.gif",
-        alt: "DRISHT-E drone traffic analytics preview"
+        type: "video",
+        src: "images/drishte-demo.mp4",
+        poster: "images/drishte-demo-poster.jpg",
+        alt: "Drone footage of a roundabout with each vehicle detected, given a tracking ID, and its trajectory drawn by DRISHT-E"
       },
       links: [
         { label: "View on GitHub", url: "https://github.com/georgevjose/DRISHTE-Public" }
@@ -149,7 +149,7 @@ window.portfolioData = {
     {
       id: "dental-landmark",
       title: "Dental Landmark Detection System",
-      subtitle: "AIML Internship (2024)",
+      subtitle: "AIML Internship",
       summary: "Two-stage PointNet++ pipeline for precise dental landmark localisation on 3D point clouds spanning 420 maxillary casts.",
       description: `
         <p>Developed during a research internship at the Australian Institute for Machine Learning, this project implements a two-stage <strong>PointNet++</strong> pipeline for precise dental landmark localisation on 3D point clouds.</p>
@@ -188,13 +188,14 @@ window.portfolioData = {
           <li>Analysis of measured hygroscopicity data from a high-altitude site to understand the impact of atmospheric pollution on monsoon patterns.</li>
           <li>Created simulations of thermodynamic models and visualizations to compare
 aerosol properties with NASA's AOD data</li>
+        </ul>
       `,
       technologies: ["Python", "Piezoelectric", "Atmospheric Science"],
       metrics: [],
       media: {
         type: "image",
         src: "images/atmospheric_aod.jpeg",
-        alt: "Atmospheric Aerosol Analysis"
+        alt: "Map of aerosol optical depth over the Indian subcontinent"
       },
       links: [
         { label: "View Publication", url: "https://pubs.acs.org/doi/full/10.1021/acsearthspacechem.3c00347" }

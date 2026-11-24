@@ -4,21 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>George V Jose | Machine Learning Engineer & Researcher</title>
+    <meta name="description" content="George V Jose is a machine learning engineer and researcher working on safer medical AI: interpretable 3D dental point cloud models, fairness audits of medical vision-language models, and computer vision.">
+    <meta name="author" content="George V Jose">
+    <link rel="canonical" href="https://georgevjose.github.io/">
+
+    <!-- Social previews -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="George V Jose | Machine Learning Engineer & Researcher">
+    <meta property="og:description" content="Safer medical AI through research and deployment.">
+    <meta property="og:url" content="https://georgevjose.github.io/">
+    <meta property="og:image" content="https://georgevjose.github.io/images/Protopointnet%20heatmap.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <!-- Apply the saved (or system) theme before first paint to avoid a flash -->
+    <script>
+        (function () {
+            var saved = localStorage.getItem('theme');
+            var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <a class="skip-link" href="#app">Skip to content</a>
 
-    <!-- Background Spotlight -->
-    <div class="background-spotlight"></div>
+    <!-- Background dot grid -->
+    <div class="background-spotlight" aria-hidden="true"></div>
 
     <header class="site-header">
-        <nav class="container">
-            <a href="#home" class="logo">GVJ</a>
-            <ul class="nav-links">
+        <nav class="container" aria-label="Primary">
+            <a href="#" class="logo" aria-label="George V Jose, home">GVJ</a>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -26,39 +53,40 @@
                 <li><a href="#publications">Publications</a></li>
                 <li><a href="#skills">Skills</a></li>
             </ul>
-            <button class="mobile-toggle" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
+            <button class="mobile-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+                <i class="fas fa-bars" aria-hidden="true"></i>
             </button>
         </nav>
     </header>
 
-    <main id="app">
-        <!-- Content will be dynamically injected here -->
+    <main id="app" tabindex="-1">
+        <noscript>
+            <div class="container section-padding">
+                <h1>George V Jose</h1>
+                <p>Machine Learning Engineer &amp; Researcher. This site needs JavaScript to display its content. You can read my <a href="Resume.pdf">resume (PDF)</a> instead.</p>
+            </div>
+        </noscript>
     </main>
 
     <!-- Floating Bottom Dock -->
     <div class="floating-dock-container">
-        <nav class="floating-dock">
-            <!-- Social links injected by JS -->
-            <div id="dock-social-links" style="display: flex; gap: 0.5rem;"></div>
-            
-            <div class="dock-separator"></div>
-            
-            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
-                <i class="fas fa-moon"></i>
+        <nav class="floating-dock" aria-label="Social links">
+            <div id="dock-social-links" class="dock-social-links"></div>
+            <div class="dock-separator" aria-hidden="true"></div>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Switch to light theme">
+                <i class="fas fa-sun" aria-hidden="true"></i>
             </button>
         </nav>
     </div>
 
     <footer class="site-footer">
         <div class="container">
-            <div class="footer-content">
-                <p>&copy; <span id="year"></span> George V Jose. All rights reserved.</p>
-            </div>
+            <p>&copy; <span id="year"></span> George V Jose</p>
         </div>
     </footer>
 
     <script src="js/data.js"></script>
+    <script src="js/hero-art.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
