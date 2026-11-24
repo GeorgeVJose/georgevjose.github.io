@@ -286,7 +286,13 @@ class Router {
         const container = document.querySelector('.projects-list');
         if (!container) return;
         container.innerHTML = window.portfolioData.projects.map(project => {
-            const thumb = project.media?.poster || project.media?.src;
+            const media = project.media;
+            let thumb = '';
+            if (media?.type === 'video') {
+                thumb = `<video class="card-video" src="${media.src}" poster="${media.poster || ''}" muted loop playsinline preload="none" aria-hidden="true"></video>`;
+            } else if (media) {
+                thumb = `<img src="${media.src}" alt="" loading="lazy" decoding="async">`;
+            }
             return `
             <a href="#project/${project.id}" class="project-list-item reveal">
                 <div class="project-list-content">
@@ -298,13 +304,34 @@ class Router {
                         ${project.technologies.length > 3 ? `<span>+${project.technologies.length - 3}</span>` : ''}
                     </div>
                 </div>
-                ${thumb ? `
-                    <div class="project-list-image">
-                        <img src="${thumb}" alt="" loading="lazy" decoding="async">
-                    </div>
-                ` : ''}
+                ${thumb ? `<div class="project-list-image">${thumb}</div>` : ''}
             </a>`;
         }).join('');
+
+        this.initCardVideos(container);
+    }
+
+    // Card videos play (muted, looping) only while on screen; reduced-motion visitors see the poster.
+    initCardVideos(container) {
+        const videos = container.querySelectorAll('.card-video');
+        if (!videos.length || prefersReducedMotion() || !('IntersectionObserver' in window)) return;
+
+        if (!this.videoObserver) {
+            this.videoObserver = new IntersectionObserver(entries => {
+                entries.forEach(({ target, isIntersecting }) => {
+                    if (isIntersecting) {
+                        target.play().catch(() => { /* autoplay blocked: poster stays */ });
+                    } else {
+                        target.pause();
+                    }
+                });
+            }, { threshold: 0.25 });
+        }
+        this.videoObserver.disconnect(); // drop videos from a previous render
+        videos.forEach(video => {
+            video.muted = true;
+            this.videoObserver.observe(video);
+        });
     }
 
     renderEducation() {
